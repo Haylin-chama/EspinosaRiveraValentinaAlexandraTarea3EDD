@@ -46,18 +46,59 @@ void SM(int C[], int n){
             if (C[j]<C[mom])//Si la posición j es menor a la posición anteriormente asignada
                 mom=j;//La posición se guarda en mom
         }
-        //AYUDA AQUI!!!
-        //Y la idea es que se intercambie con su antecesor
+        //La posición mom debe intercambiarse con el primero o el que le sigue al primero y así...
         YVUELTAA(C,i,mom);
     }
 }
-
 
 //Shell sort
 
 
 //Merge Sort
+void MS(int D[],int minimo, int medio, int maximo){
+    int AUX[maximo]
+    int mi=minimo,i=0,j=medio+1,k;
+    while (mi<=medio and j<=maximo){
+        if(D[h]<=D[j]){
+            AUX[i]=A[h];
+            h++;
+        }
+        else
+            AUX[i]=A[j];
+            j++;
+    }
+    i++;
 
+    if(h>medio){
+        for(k=j;k<=maximo;k++){
+            AUX[i]=D[k];
+            i++;
+        }
+    }
+    else{
+        for(k=h;k<=medio;k++){
+            AUX[i]=D[k];
+            i++;
+        }
+    }
+    for(k=0;k<=maximo-minimo;k++){
+        D[k+minimo]=AUX[k];
+    }
+}
+
+void MSR(int D[], int minimo, int maximo)/*OJO el maximo es el largo del arreglo*/{
+    int medio;
+    if (l<=1)
+        cout<<"La lista ya está ordenada";
+    else{
+        if(bajo<alta){
+            mitad=(minimo+maximo)/2;
+            MSR(D,minimo,medio);
+            MSR(D,medio+1,maximo);
+            MS(D,minimo,medio,maximo);
+        }
+    }
+}
 
 //Heap sort
 
