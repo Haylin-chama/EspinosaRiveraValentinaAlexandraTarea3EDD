@@ -4,7 +4,7 @@
 using namespace std;
 
 //Otros
-void YVUELTAA(int Y[], int V[], int dad, int mom){
+void YVUELTAA(int Y[], int V[], int dad, int mom)/*<-Estará bien?*/ {
     int cau;
     cau=Y[dad+1];
     A[dad+1]=A[mom];
@@ -48,6 +48,7 @@ void SM(int C[], int n){
             if (C[j]<C[mom])
                 mom=j;
         }
+        //AYUDA AQUI!!!
         YVUELTAA(C,C,i,mom);
     }
 }
