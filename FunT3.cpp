@@ -39,14 +39,15 @@ void ID(int B[], int n){
 
 //Seleccion multiple ....Ordenamiento por selección?
 void SM(int C[], int n){
-    int mom;
+    int mom; //MOM es un valor minimo
     for (int i=0;i<n;i++){
-        mom=i;
-        for (int j=i+1;j<=n;j++){
-            if (C[j]<C[mom])
-                mom=j;
+        mom=i;//La posición i se asigna a mom
+        for (int j=i+1/*Se analiza desde la posición i+1 en delante*/;j<=n/*Hasta N*/;j++){
+            if (C[j]<C[mom])//Si la posición j es menor a la posición anteriormente asignada
+                mom=j;//La posición se guarda en mom
         }
         //AYUDA AQUI!!!
+        //Y la idea es que se intercambie con su antecesor
         YVUELTAA(C,i,mom);
     }
 }
