@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1409954185 source:c:\users\haylina\estructura de datos\espinosariveravalentinaalexandratarea3edd\funt3.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
+1409953818 source:c:\users\haylina\estructura de datos\espinosariveravalentinaalexandratarea3edd\main.cpp
+	<iostream>
+	<time.h>
+	<stdlib.h>
+	"CabeceraT3.h"
+
+1409954252 c:\users\haylina\estructura de datos\espinosariveravalentinaalexandratarea3edd\cabecerat3.h
+	<iostream>
+
