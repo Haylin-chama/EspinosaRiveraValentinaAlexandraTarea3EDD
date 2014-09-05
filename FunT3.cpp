@@ -4,11 +4,11 @@
 using namespace std;
 
 //Otros
-void YVUELTAA(int Y[], int V[], int dad, int mom)/*<-Estará bien?*/ {
+void YVUELTAA(int Y[], int dad, int mom)/*<-Estará bien?*/ {
     int cau;
-    cau=Y[dad+1];
-    A[dad+1]=A[mom];
-    A[j+1]=aux;
+    cau=Y[dad];
+    A[dad]=A[mom];
+    A[mom]=cau;
 }
 
 
@@ -18,9 +18,7 @@ void Burbuja(int A[], int n){
     for (int i=1; i<=n; i++){
         for (int j=0; i<=n-1; j++){
             if (A[j]>A[j+1]){
-                aux=A[j];
-                A[j]=A[j+1];
-                A[j+1]=aux;
+                YVUELTAA(A,j,j+1)
             }
         }
     }
@@ -49,7 +47,7 @@ void SM(int C[], int n){
                 mom=j;
         }
         //AYUDA AQUI!!!
-        YVUELTAA(C,C,i,mom);
+        YVUELTAA(C,i,mom);
     }
 }
 
