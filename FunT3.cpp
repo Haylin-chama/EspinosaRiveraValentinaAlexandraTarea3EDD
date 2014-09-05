@@ -52,7 +52,13 @@ void SM(int C[], int n){
 }
 
 //Shell sort
+void SSPost(int W[], int l, int gasp){
+    for (int i=gasp;){
 
+    }
+}
+
+void SS(int W[], )
 
 //Merge Sort
 void MS(int D[],int minimo, int medio, int maximo){
@@ -102,8 +108,6 @@ void MSR(int D[], int minimo, int maximo)/*OJO el maximo es el largo del arreglo
 
 //Heap sort
 
-
-//Heap sort
 
 
 //Quick sort
